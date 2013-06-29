@@ -1,0 +1,1 @@
+http://www.pcflyer.net/DataFeed/vatsim-data.txt
