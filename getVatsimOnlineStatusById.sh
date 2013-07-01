@@ -24,7 +24,7 @@ then
 	echo "$MYDATE: $MYUSER is not online" >> getVatsimOnlineStatusById.log
 else
 	echo "$MYUSERDATA" > mailBody.txt
-	mail -s "gvosbi:: One of my vatsim friends is online now!" raph@austrianmultimedia.at < mailBody.txt
+	mail -s "gvosbi:: One of my vatsim friends is online now!" YOUREMAIL < mailBody.txt
 	echo "$MYDATE: $MYUSER is online: $MYUSERDATA" >> getVatsimOnlineStatusById.log
 fi	
 
