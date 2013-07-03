@@ -23,7 +23,6 @@ then
 	echo "$MYDATE: $MYUSER is not online" >> getVatsimOnlineStatusById.log
 	echo "no" > .onlineStatus.temp
 else
-<<<<<<< HEAD
 	STATUS=` cat .onlineStatus.temp `
 	while [ "$STATUS" == "no" ]
 	do
@@ -31,10 +30,8 @@ else
 		mail -s "gvosbi:: One of my vatsim friends is online now!" YOUR EMAIL ADRESS HERE! < mailBody.txt
 		echo "yes" > .onlineStatus.temp
 	done
-=======
 	echo "$MYUSERDATA" > mailBody.txt
 	mail -s "gvosbi:: One of my vatsim friends is online now!" YOUREMAIL < mailBody.txt
->>>>>>> 42fc587e0a387a1c6b5c454cdcee1d8b6653c216
 	echo "$MYDATE: $MYUSER is online: $MYUSERDATA" >> getVatsimOnlineStatusById.log
 fi	
 
