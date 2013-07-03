@@ -28,7 +28,7 @@ else
 	while [ "$STATUS" == "no" ]
 	do
 		echo "$MYUSERDATA" > mailBody.txt
-		mail -s "gvosbi:: One of my vatsim friends is online now!" raph@austrianmultimedia.at < mailBody.txt
+		mail -s "gvosbi:: One of my vatsim friends is online now!" YOUR EMAIL ADRESS HERE! < mailBody.txt
 		echo "yes" > .onlineStatus.temp
 	done
 =======
